@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200..800&display=swap');
+
+/* --- Container --- */
+
+.container{
+    margin-left: auto;    
+    margin-right: auto;
+    width: 80vw;
+    background-color: white;
+}
+
+    /*--- Header ---*/
+
+.container .header .header-text-container{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+    /*---Img recipe---*/
+
+.container .header .img-container{
+    text-align: center;
+    
+}
+
+.container .header .img-container .img-recipe{
+    padding: .5rem;
+    height: auto;
+    width: auto;
+}
+
+ /*---Main Content---*/
+
+ .container .main-container{
+    text-align: justify;
+    margin-top: 1vh;
+    padding: 1vh;
+}
+
+.container .main-container .main-text-container h2{
+    
+    padding: 1rem;
+
+}
+
+
+.container .main-container .main-time-container{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.container .main-container .main-time-container .main-time-box{
+        
+    align-items: center;
+    padding: 5px 50px 5px 50px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    
+    
+}
+
+.container .main-container .main-ingredients-container ul{
+    list-style: none;
+    margin-top: 5px;
+    line-height: 4rem;
+
+}
+
+/*---Footer--*/
+
+.container .footer{
+    text-align: center;
+}
+
+
+/* Media para celulares L*/
+@media(min-width: 425px) and (max-width:767px){
+    .container .header .img-container .img-recipe{
+    height: 21vh;
+    width: 71vw;
+    }
+
+    .container .main-container .main-time-container .main-time-box{
+        padding: 1px 20px 1px 20px;
+        font-size: 1rem;
+    }
+}
+/* Media para celulares M*/
+@media(min-width: 375px) and (max-width:424px){
+    .container .header .img-container .img-recipe{
+    height: 21vh;
+    width: 71vw;
+    }
+
+    .container .main-container .main-time-container .main-time-box{
+        padding: 1px 10px 1px 10px;
+        font-size: 1rem;
+    }
+}
+/* Media para celulares S*/
+@media(min-width: 320px) and (max-width:374px){
+    .container .header .img-container .img-recipe{
+    height: 21vh;
+    width: 71vw;
+    }
+
+    .container .main-container .main-time-container .main-time-box{
+        padding: 1px 10px 1px 10px;
+        font-size: .75rem;
+    }
+}
