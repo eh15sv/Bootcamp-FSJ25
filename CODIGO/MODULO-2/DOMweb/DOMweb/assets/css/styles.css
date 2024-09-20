@@ -1,0 +1,147 @@
+/* Estilos CSS para la página */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+header {
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#profile {
+    text-align: center;
+    padding: 2rem;
+}
+
+#profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#profile h2 {
+    margin: 0.5rem 0;
+}
+
+#profile p {
+    color: #666;
+    background-color: white;
+    border-radius: 50px;;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    margin: 10%;
+}
+
+.profile-image{
+    display: flex;
+}
+
+
+#content {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre los botones */
+}
+
+button, input[type="text"] {
+    margin: 0.5rem;
+    padding: 20px;
+    background-color: #0d8f23;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="file"]{
+    margin-top: 10%;
+    margin-left: 10px;
+    padding: 20px;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+    border-radius: 20px; /* Esquinas redondeadas */
+}
+
+button:hover{
+    background-color: #be0dce;
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+input[type="text"] {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333;
+    border: 1px solid #ccc; /* Borde gris */
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* Esquinas redondeadas */
+    width: calc(100% - 2rem); /* Ajuste de ancho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#skills {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Alinear texto de la lista a la izquierda */
+    max-height: 200px; /* Altura máxima de la lista */
+    overflow-y: auto; /* Mostrar scroll vertical */
+    border: 1px solid #ccc; /* Borde alrededor de la lista */
+    border-radius: 12px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#skills li {
+    background: #f4f4f4;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 20px; /* Esquinas redondeadas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#skills li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease;
+}
+
+#skills li button:hover {
+    background-color: #ff0000; /* Color de fondo al pasar el cursor */
+}
+
+.footer {
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 78%;
+}

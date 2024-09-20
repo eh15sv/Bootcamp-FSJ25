@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web usando DOM</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Web usando DOM</h1>
+    </header>
+
+    <Lista class="container">
+    <section id="profile">
+        <section class="profile-image">
+        <img id="profileImage" src="https://via.placeholder.com/150" alt="Foto de Perfil">
+        <input type="file" id="uploadImage" accept="image/*">
+        </section>
+        <h2 id="profileName">Nombre</h2>
+        <p id="status">Estado: <span id="employmentStatus">Laborando</span></p>
+        <div class="button-container">
+            <button id="toggleStatus">Cambiar Estado</button>
+            <button id="changeColor">Cambiar Color de Fondo</button>
+        </div>
+    </section>
+    <!-- Lista de aptitudes -->
+    <section id="content">
+        <h3>Añadir Aptitudes</h3>
+        <input type="text" id="skillInput" placeholder="Escribe una aptitud...">
+        <button id="addSkill">Agregar Aptitud</button>
+
+        <h3>Lista de Aptitudes</h3>
+        <ul id="skills">
+            <li>Trabajo en Equipo <button class="deleteSkill">Borrar</button></li>
+            <li>Comunicación <button class="deleteSkill">Borrar</button></li>
+            <li>Resolución de Problemas <button class="deleteSkill">Borrar</button></li>
+        </ul>
+    </section>
+</section>
+
+    <footer class="footer">
+        <h4>©Copyright 2024</h4>
+    </footer>
+
+    <script src="dom.js"></script> <!-- Enlace al archivo JS -->
+</body>
+</html>
