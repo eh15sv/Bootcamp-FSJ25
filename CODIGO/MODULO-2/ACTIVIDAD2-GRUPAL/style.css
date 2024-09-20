@@ -1,0 +1,142 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    background-color: black;
+  }
+  
+  /* etiqueta de carro */
+  .tag {
+    font-size: 0.9rem;
+    background-color: black;
+    border-radius: 5px;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  /* carro */
+  .carro-title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .carro-card {
+    background: #fff;
+    display: grid;
+    
+    grid-template-rows: 55% 45%;
+    height: 80%;
+    width: 30%;
+    box-shadow: 10px 10px 25px 0px #3c3c3c;
+  }
+  
+  .carro-image {
+    
+    background-image: url("./image/Desktop_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 10px;
+    width: 28rem;
+    height: 66%;
+  }
+  
+  .carro-description {
+    background-color: #388697;
+    color: #fff;
+    padding-left: 20px;
+    margin-top: -67px;
+  }
+  
+  .carro-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+  }
+  
+  .carro-image img {
+    width: 28rem;
+  }
+  
+  .stars {
+    color: orangered;
+    font-size: 1em;
+  }
+  
+  /* colores */
+  .imagen-color {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: -15px;
+  }
+  
+  .colors {
+    display: flex;
+    width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .frente {
+    background: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+  }
+  
+  .lado-i {
+    background: gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+  }
+  
+  .lado-d {
+    background: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+  }
+  
+
+  
+  /* botones */
+  button {
+    cursor: pointer;
+  }
+  
+  #button {
+    background-color: #0D1321;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button white-button {
+    background-color: #fff;
+  }
+  
+  .button-text {
+    color: #fff;
+    margin-left: 5px;
+  }
+  
+  .respuesta {
+    display: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+  }
