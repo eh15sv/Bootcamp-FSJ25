@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <div id="main-container">
+        <div id="gallery-container">
+            <h2 id="title">Titulo de la Imagen</h2>
+            <img id="image" src="" alt="Imagen de la Galeria">
+            <p id="description">Descripcion de la Imagen</p>
+            <button id="prev-btn">Anterior</button>
+            <button id="next-btn">Siguiente</button>
+        </div>
+
+        <div id="controls-container">
+            <h3>Administrar Imagenes</h3>
+            <input type="text" id="new-tittle" placeholder="Titulo">
+            <input type="text" id="new-description" placeholder="Descripcion">
+            <input type="text" id="new-src" placeholder="URL de la Imagen">
+            <button id="add-btn">Agregar Imagen</button>
+            <button id="remove-btn">Eliminar Imagen Actual</button>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

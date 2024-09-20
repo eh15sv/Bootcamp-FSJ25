@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    background-color: whitesmoke;
+
+}
+
+
+.container .header .navbar-logo{
+    margin-top: auto;
+    margin-bottom: 15px;
+    text-align: right;
+    height: 10vh;
+    width: 80vw; 
+}
+
+.container .header .navbar .navbar-text .navbar-menu{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 1em;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: red;
+    font-style: normal;
+    border-radius: 10px;
+    
+}
+
+.container .header .navbar .navbar-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.container .main-content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 4fr 4fr;
+    gap: 2rem;
+}
+
+.container .main-content .productos{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    justify-content: center;
+    gap: 3px;
+    margin: 5px;
+    
+}
+
+.container .main-content .productos .productos-tecnologia .img-productos-tecnologia{
+    width: 25vw;
+    height: 25vh;
+    
+}
+
+
+.container .main-content .productos .productos-tecnologia .productos-tecnologia-opciones h4{
+    border-radius: 15px;
+    background-color: lightskyblue;
+    font-family: 'Playwrite+DE+Grund', sans-serif;
+}
+
+.container .main-content .productos .productos-ropa .img-productos-moda{
+    width: 25vw;
+    height: 25vh;
+    
+}
+
+
+.container .main-content .productos .productos-ropa .productos-ropa-opciones h4{
+    border-radius: 15px;
+    background-color: lightseagreen;
+    font-family: 'Playwrite+DE+Grund', sans-serif;
+    color: white;
+}
+
+
+
+.container .main-content .productos .productos-hogar .img-productos-hogar{
+    width: 25vw;
+    height: 25vh;
+    
+}
+
+.container .main-content .productos .productos-hogar .productos-hogar-opciones h4{
+    border-radius: 15px;
+    background-color: lightsalmon;
+    font-family: 'Playwrite+DE+Grund', sans-serif;
+}
+
+
+
+.container .footer .footer-contacto{
+    
+    text-align: center;
+    background-color: darkred;
+    color: azure;
+}
+
+.container .footer .footer-contacto .footer-redes{
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    
+}
+
+
+/* Media para celulares L*/
+@media(min-width: 425px) and (max-width:767px){
+    .container{
+
+        
+
+    }
+    
+    
+    .container .main-content .productos{
+    grid-template-columns: 1fr;
+    height: 21vh;
+    width: 71vw;
+    }
+
+    .container .main-content .productos .productos-tecnologia img{
+        width: 75vw !important;
+        
+    }
+
+    .container .main-content .productos .productos-ropa img{
+        width: 75vw !important;
+        
+    }
+
+    .container .main-content .productos .productos-hogar img{
+        width: 75vw !important;
+        
+    }
+
+
+    .container .footer .footer-contacto{
+        
+        margin-top: 100px;
+        width: 100%;          
+        margin: auto;
+    }
+
+    .container .footer .footer-contacto .footer-redes{
+        width: 75vw;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        font-size: 0.5 rem;   
+    }
+
+    .container .footer h4{
+        font-size: 1rem;
+    }
+}
+/* Media para celulares M*/
+@media(min-width: 375px) and (max-width:424px){
+
+    .container .main-content .productos{
+        grid-template-columns: 1fr;
+        height: 21vh;
+        width: 71vw;
+        }
+
+        .container .main-content .productos .productos-tecnologia img{
+            width: 75vw !important;
+            
+        }
+    
+        .container .main-content .productos .productos-ropa img{
+            width: 75vw !important;
+            
+        }
+    
+        .container .main-content .productos .productos-hogar img{
+            width: 75vw !important;
+            
+        }
+    
+}
+/* Media para celulares S*/
+@media(min-width: 320px) and (max-width:374px){
+    .container .main-content .productos{
+        grid-template-columns: 1fr;
+        height: 21vh;
+        width: 71vw;
+        }
+    .container .main-content .productos .productos-tecnologia img{
+        width: 75vw !important;
+        
+    }
+
+    .container .main-content .productos .productos-ropa img{
+        width: 75vw !important;
+        
+    }
+
+    .container .main-content .productos .productos-hogar img{
+        width: 75vw !important;
+        
+    }
+}

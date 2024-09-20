@@ -1,0 +1,110 @@
+/* Fondo General*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #7cf378, #272ab9);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Contenedor principal (galeria) */
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 90%;
+    margin: 20px;
+}
+
+/* Contendor de la galeria */
+
+#gallery-container{
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+/* Contenedor de los controles */
+#controls-container{
+
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+/*Estilo de la imagen */
+img{
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+
+/* Botones */
+button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: #244974;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff3a4c;
+  }
+
+/* Estilo de los campos de entrada */
+input {
+    padding: 12px 5px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #333;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+/* Ajuste de texto */
+h2, p, h3{
+    color: white;
+    text-shadow: 1px 1px 5 px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividad*/
+@media(max-width: 768px){
+    #main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
