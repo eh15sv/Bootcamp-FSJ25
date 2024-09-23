@@ -1,0 +1,49 @@
+<!--EJERCICIO 5: Realizar una función para una tienda de coches en donde se deberá calcular: Si el coche a la venta es un FORD FIESTA, aplicar un 5% de descuento en la compra. Si el coche a la venta es un FORD FOCUS, el descuento será del 10% y si es un FORD ESCAPE el descuento será del 20%. Mostrar en html el coche seleccionado y el descuento que se aplicara en base a lo que selecciono el usuario.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodigo - Ejercicio 5</title>
+</head>
+<body>
+    <section>
+    <h1>Calcula tu descuento en nuestra tienda</h1>
+    <label for="coche">Selecciona un coche:</label>
+    <select id="coche">
+        <option value="FORD FIESTA">FORD FIESTA</option>
+        <option value="FORD FOCUS">FORD FOCUS</option>
+        <option value="FORD ESCAPE">FORD ESCAPE</option>
+    </select>
+    <button onclick="calcularDescuento()">Calcular tu descuento</button>
+    <p id="resultado"></p>
+    </section>
+
+    <script>
+        function calcularDescuento() {
+            let coche=document.getElementById("coche").value;
+            let descuento;
+
+            switch (coche) {
+                case 'FORD FIESTA':
+                    descuento = 0.05;
+                    break;
+                case 'FORD FOCUS':
+                    descuento = 0.10;
+                    break;
+                case 'FORD ESCAPE':
+                    descuento = 0.20;
+                    break;
+            
+                default:
+                    descuento = 0;
+                    break;
+            }
+
+            let mensaje =`El descuento del coche seleccionado es: ${coche}.y tiene un descuento del ${descuento*100} %.`;
+            document.getElementById("resultado").innerText = mensaje;
+            
+        }
+    </script>
+</body>
+</html>

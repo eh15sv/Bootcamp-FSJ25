@@ -1,0 +1,65 @@
+<!--
+
+EJERCICIO 10:
+Se cuenta con la siguiente información:
+• Las edades de 5 estudiantes del turno mañana.
+• Las edades de 6 estudiantes del turno tarde.
+• Las edades de 11 estudiantes del turno noche.
+Nota: Las edades de cada estudiante se deberán ingresar por la web.
+Lo que queremos devolver:
+• Obtener el promedio de las edades de cada turno (tres promedios).
+• Imprimir dichos promedios (promedio de cada turno).
+• Mostrar por pantalla un mensaje que indique cuál de los tres turnos tiene un promedio de edades mayor.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodigo - Ejercicio 10</title>
+    <script src="./ejercicio10.js"></script>
+</head>
+<body>
+    <h1>Formulario para ingresar edades de estudiantes</h1>
+    <h2>Estudiantes del turno: mañana</h2>
+    <div id="turnomañana">
+        <input type="number" id="edadM1" placeholder="Edad del Alumno 1">
+        <input type="number" id="edadM2" placeholder="Edad del Alumno 2">
+        <input type="number" id="edadM3" placeholder="Edad del Alumno 3">
+        <input type="number" id="edadM4" placeholder="Edad del Alumno 4">
+        <input type="number" id="edadM5" placeholder="Edad del Alumno 5">
+    </div>
+    <h2>Estudiantes del turno: tarde</h2>
+    <div id="turnotarde">
+        <input type="number" id="edadT1" placeholder="Edad del Alumno 1">
+        <input type="number" id="edadT2" placeholder="Edad del Alumno 2">
+        <input type="number" id="edadT3" placeholder="Edad del Alumno 3">
+        <input type="number" id="edadT4" placeholder="Edad del Alumno 4">
+        <input type="number" id="edadT5" placeholder="Edad del Alumno 5">
+        <input type="number" id="edadT6" placeholder="Edad del Alumno 6">
+    </div>
+    <h2>Estudiantes del turno: noche</h2>
+    <div id="turnonoche">
+    <input type="number" id="edadN1" placeholder="Edad del Alumno 1">
+    <input type="number" id="edadN2" placeholder="Edad del Alumno 2">
+    <input type="number" id="edadN3" placeholder="Edad del Alumno 3">
+    <input type="number" id="edadN4" placeholder="Edad del Alumno 4">
+    <input type="number" id="edadN5" placeholder="Edad del Alumno 5">
+    <input type="number" id="edadN6" placeholder="Edad del Alumno 6">
+    <input type="number" id="edadN7" placeholder="Edad del Alumno 7">
+    <input type="number" id="edadN8" placeholder="Edad del Alumno 8">
+    <input type="number" id="edadN9" placeholder="Edad del Alumno 9">
+    <input type="number" id="edadN10" placeholder="Edad del Alumno 10">
+    <input type="number" id="edadN11" placeholder="Edad del Alumno 11">
+    </div>
+
+    <button onclick="promEdades()">Obtener Promedios e Informacion</button>
+
+    <p id="mensaje"></p>
+
+   
+</body>
+</html>
